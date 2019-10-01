@@ -22,18 +22,3 @@ dellos_ntp:
       ethernet 1/1/2:
         disable: true
         broadcast: true
-
-# Sample variables for dellos6 device
-dellos_ntp:
-    server:
-      - ip: 2.2.2.2
-        state: present
-
-# Sample variables for dellos9 device
-dellos_ntp:
-    server:
-      - ip: 2.2.2.2
-        vrf:
-          - test
-          - tes
-        state: present
